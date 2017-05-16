@@ -10,9 +10,6 @@
     <!-- Basic Page Needs
         ================================================== -->
     <meta charset="utf-8">
-    <title>openHAB Cloud - <%= title %></title>
-    <meta name="description" content="openHAB Cloud - cloud companion service for openHAB">
-    <meta name="author" content="openHAB">
     <!-- Mobile Specific Metas
         ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -151,7 +148,7 @@
 <header id="mainHeader" class="clearfix">
     <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
-            <div class="container"> <a href="/" class="brand"><img src="/img/openhab-logo-top.png" alt="openHAB"/></a>
+            <div class="container"> 
                 <nav id="mainMenu" class="clearfix">
                     <ul>
                         <% if (user) { %>
@@ -192,7 +189,7 @@
                         </li>
                         <% } %>
                         <% if (!user) { %>
-                        <li><a href="/login" class="firstLevel <% if (section == 'login')  { %>active<% } %>">Login / Sign up</a></li>
+                        <li><a href="/login" class="firstLevel <% if (section == 'login')  { %>active<% } %>">Login </a></li>
                         <% } else { %>
                         <li>
                             <a href="#" class="firstLevel" data-toggle="dropdown"><%= user.username %></a>
